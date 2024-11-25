@@ -1,0 +1,94 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #5a8ded, #3b4cb3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: #2a2a72;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Main Menu */
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4a4ab3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    background: #5e5eea;
+}
+
+.menu-item .icon {
+    font-size: 1.8rem;
+}
+
+.menu-item .text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+footer .footer-logo img {
+    width: 60px;
+    height: auto;
+}
